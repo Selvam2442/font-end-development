@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notice Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-image: url(Assets/face.png);
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .notice {
+            border: 1px solid #000;
+            padding: 20px;
+            position: relative;
+            background: #fff;
+        }
+
+        .notice::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background-image: url(Assets/kc.jpg); 
+            background-repeat: no-repeat;
+            background-position: center;;
+            backdrop-filter: blur(4px);
+            z-index: 0;
+        }
+
+        .notice-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .notice h2 {
+            margin-top: 0;
+            font-size: 18px;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+
+        .info-group {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 80px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            font-style: italic;
+            border-top: 1px solid #eee;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Face prep notice board</h1>
+            <p>kamaraj college, thoothukudi</p>
+        </header>
+
+        <div class="board">
+            <div class="notice">
+                <div class="notice-content">
+                    <h2>Examination</h2>
+                    <div class="info-group">
+                        <span class="label">Subject:</span> Front-end Development Test
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Time:</span> 10:30 AM
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Venue:</span> Room 302
+                    </div>
+                    <div class="footer">Issued by:  Aparna</div>
+                </div>
+            </div>
+            <div class="notice">
+                <div class="notice-content">
+                    <h2>Java Paper distribution</h2>
+                    <div class="info-group">
+                        <span class="label">Subject:</span> Java Programming
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Time:</span> Before 4:00 PM
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Venue:</span> office Room
+                    </div>
+                    <div class="footer">Issued by: Arun (Java sir)</div>
+                </div>
+            </div>
+            <div class="notice">
+                <div class="notice-content">
+                    <h2>Sports Club</h2>
+                    <div class="info-group">
+                        <span class="label">Subject:</span> Annual Meet Trials
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Time:</span> 07:00 AM
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Venue:</span> College Ground
+                    </div>
+                    <div class="footer">Issued by: Tamil aiyaa</div>
+                </div>
+            </div>
+            <div class="notice">
+                <div class="notice-content">
+                    <h2>Cultural Wing</h2>
+                    <div class="info-group">
+                        <span class="label">Subject:</span> Music Auditions
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Time:</span> 02:00 PM
+                    </div>
+                    <div class="info-group">
+                        <span class="label">Venue:</span> Auditorium
+                    </div>
+                    <div class="footer">Issued by: Vedha mam</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
