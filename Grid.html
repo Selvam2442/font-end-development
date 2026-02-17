@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Gallery</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+        <div class="item"><img src="Assets/face.png" alt="Alan"></div>
+    </div>
+</body>
+</html>
