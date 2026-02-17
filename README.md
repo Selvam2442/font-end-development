@@ -16,7 +16,7 @@
 <img width="1917" height="969" alt="image" src="https://github.com/user-attachments/assets/940a4c70-883f-4519-813b-a7132ca0fe01" />
 
 <p>4)I have created a responsive grid gallery, by using HTML, CSS</p>
-   <Strong>Live Demo- <a href="https://selvam2442.github.io/font-end-development/Board.html">Notice Board</a></Strong>
+   <Strong>Live Demo- <a href="https://selvam2442.github.io/font-end-development/Grid.html">Grid Gallery</a></Strong>
    <p>Preview:</p>
    <h4>Laptop View</h4>
    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4c9cd5be-a2cd-45a6-aef4-66ee0e1ceb20" />
