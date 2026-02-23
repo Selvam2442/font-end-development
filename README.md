@@ -64,10 +64,12 @@ A fully responsive image gallery utilizing CSS Grid. It adapts seamlessly to dif
 ### 5️⃣ Login & Landing Page
 An interactive login and landing page experience built with HTML, CSS, and JavaScript. It features a clean design and utilizes JavaScript to trigger a simple alert message upon user interaction.
 
-* **Live Demo:** [View Login Page](#) *(Note: Replace '#' with your actual GitHub Pages link)*
+* **Live Demo:** [Login Page](https://selvam2442.github.io/font-end-development/Login%20page.html)
+
 * **Preview:**
 <br>
-<img width="800" alt="Login and Landing Page Preview" src="YOUR_IMAGE_LINK_HERE" /> *(Note: Replace 'YOUR_IMAGE_LINK_HERE' with your uploaded image link)*
+<img width="800" alt="Login and Landing Page Preview" src="<img width="401" height="422" alt="image" src="https://github.com/user-attachments/assets/6e33462a-af7d-4702-93a1-8263c8892b04" />
+" /> 
 
 ---
 
