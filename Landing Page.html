@@ -3,18 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Dashboard Landing Page</title>
     <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header / Navigation */
+        header {
+            background: #ffffff;
+            padding: 20px 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
             text-align: center;
-            padding: 50px;
+            padding: 80px 20px;
+            background: #e0e7ff;
+            border-bottom: 1px solid #c7d2fe;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #1e40af;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #4b5563;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+            flex-grow: 1; /* Pushes footer to the bottom */
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #1f2937;
+            font-size: 20px;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: #9ca3af;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Landing Page!</h1>
-    <p>You have successfully logged in.</p>
+
+    <header>
+        <div class="logo">MyWorkspace</div>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#profile">Profile</a>
+            <a href="#settings">Settings</a>
+            <a href="#logout">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome Back!</h1>
+        <p>You have successfully logged in. This is your central hub to manage your account, view your statistics, and discover new tools.</p>
+        <a href="#action" class="btn">View Reports</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Analytics Overview</h3>
+            <p>Track your recent activity, monitor your progress, and view comprehensive data charts right from here.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Account Settings</h3>
+            <p>Update your personal information, change your password, and manage your billing preferences securely.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Help & Support</h3>
+            <p>Need assistance? Access our knowledge base, read FAQs, or reach out directly to our 24/7 support team.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWorkspace App. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
