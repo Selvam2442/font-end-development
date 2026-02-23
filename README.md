@@ -61,5 +61,15 @@ A fully responsive image gallery utilizing CSS Grid. It adapts seamlessly to dif
 <br>
 <img width="600" alt="Tablet View" src="https://github.com/user-attachments/assets/c8a073a3-34e3-481c-ad2b-e099e20f4082" />
 
+### 5️⃣ Login & Landing Page
+An interactive login and landing page experience built with HTML, CSS, and JavaScript. It features a clean design and utilizes JavaScript to trigger a simple alert message upon user interaction.
+
+* **Live Demo:** [View Login Page](#) *(Note: Replace '#' with your actual GitHub Pages link)*
+* **Preview:**
+<br>
+<img width="800" alt="Login and Landing Page Preview" src="YOUR_IMAGE_LINK_HERE" /> *(Note: Replace 'YOUR_IMAGE_LINK_HERE' with your uploaded image link)*
+
+---
+
 ---
 ⭐️ *Feel free to explore the repository and check out the live demos!*
