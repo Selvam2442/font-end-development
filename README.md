@@ -94,7 +94,7 @@ A fully responsive and minimalist navigation bar built using pure HTML and CSS. 
 
 * **Preview:**
 <br>
-<img width="800" alt="Navigation Bar Preview" src="ADD_YOUR_NAV_SCREENSHOT_LINK_HERE" />
+<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/5496e477-4d4a-49c1-9281-38c2e065466f" />
 
 ---
 
