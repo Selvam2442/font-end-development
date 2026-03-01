@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Antony Selvam - Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #000;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #000;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            list-style: none;
+            min-width: 150px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .dropdown-item:hover {
+            background: #f0f0f0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        @media(max-width:600px) {
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                flex-direction: column;
+                display: none;
+                padding: 1rem;
+                border-bottom: 1px solid #ddd;
+            }
+
+            #menu-toggle:checked~.nav-menu {
+                display: flex;
+            }
+
+            .dropdown-menu {
+                position: static;
+                border: none;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">Maria Antony Selvam</a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="Profile.html" class="nav-link">Profile</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Features ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Board.html" class="dropdown-item">Board</a></li>
+                        <li><a href="Gallery.html" class="dropdown-item">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Login page.html" class="nav-link">Login</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Welcome!</h1>
+            <p>A brief intro as a BCA student and web enthusiast. Check out my <a href="Profile.html">profile</a> and projects below.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js & MongoDB</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>Math Tug-of-War (learning game)</li>
+                <li>Attendance Tracker (Google Sheets integration)</li>
+                <li>College Notice Board (responsive site)</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
