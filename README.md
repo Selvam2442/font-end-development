@@ -98,6 +98,24 @@ A fully responsive and minimalist navigation bar built using pure HTML and CSS. 
 
 ---
 
+### 7️⃣ Advanced Hover Effects & Interactive PPT
+A deep dive into modern CSS3 interactivity. This project showcases 6 distinct types of hover effects (3D Rotate, Glassmorphism, Neon Glow, etc.) and includes a built-in, code-driven presentation slide system.
+
+#### ✨ Key Features
+* **Cubic-Bezier Animations:** Smooth, physics-based motion.
+* **Glassmorphism UI:** Modern frosted-glass aesthetic using `backdrop-filter`.
+* **Interactive Slide Engine:** A fully functional PPT-style navigation built with Vanilla JS.
+* **3D Transforms:** Spatial awareness using CSS `perspective`.
+
+* **Live Demo:** [View Hover Effects & PPT](https://selvam2442.github.io/font-end-development/Hover.html)
+
+#### 💻 Visual Preview
+<br>
+<img width="800" alt="Hover Effects Preview" src="https://github.com/user-attachments/assets/6e33462a-af7d-4702-93a1-8263c8892b04" /> 
+*(Note: Replace this image link with a screenshot of your Hover.html once uploaded)*
+
+---
+
 ⭐️ Feel free to explore the repository and check out the live demos!
 
 ---
