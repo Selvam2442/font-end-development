@@ -111,8 +111,7 @@ A deep dive into modern CSS3 interactivity. This project showcases 6 distinct ty
 
 #### 💻 Visual Preview
 <br>
-<img width="800" alt="Hover Effects Preview" src="https://github.com/user-attachments/assets/6e33462a-af7d-4702-93a1-8263c8892b04" /> 
-*(Note: Replace this image link with a screenshot of your Hover.html once uploaded)*
+<img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/7afa1b9b-95a2-48d4-b00b-3f01e646d0bf" />
 
 ---
 
