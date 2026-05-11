@@ -162,6 +162,26 @@ A fully functional calculator with a sleek UI built using **Bootstrap 5** and **
 
 ---
 
+### 🖱️ 10. Interactive DOM Events Showcase
+
+A clean, modern static website designed to perfectly demonstrate core JavaScript DOM events (Click and Hover) with smooth CSS transitions and state management.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/events.html)
+
+🖼️ **Preview:** <br>
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/57d2b3a6-9586-4f26-8312-a7fd0d98812c" />
+
+
+✨ **Features:**
+* **Event Listeners:** Real-time handling of `click`, `mouseenter`, and `mouseleave` events. 🖱️
+* **State Management:** Tracks click counts and dynamically toggles UI themes based on user interaction. 🔢
+* **Dynamic Styling:** Changes DOM elements' colors and text content purely through Vanilla JavaScript. 🎨
+* **Smooth Animations:** Features elegant `transform` scaling and `box-shadow` hover effects. ✨
+
+💡 This project highlights **Vanilla JavaScript event handling + dynamic DOM manipulation**.
+
+---
+
 ## 📈 Skills Gained
 
 * Responsive Web Design
