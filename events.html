@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Events</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        h1 { 
+            margin-bottom: 50px; 
+            color: #222; 
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 280px;
+            text-align: center;
+            border-top: 5px solid transparent;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .card h3 { 
+            margin-top: 0; 
+            margin-bottom: 25px;
+            color: #444; 
+            font-size: 1.4rem;
+        }
+
+        .status-text { 
+            margin-top: 25px; 
+            font-weight: 600; 
+            color: #666; 
+            height: 20px; 
+            font-size: 1rem;
+        }
+
+        /* 1. Click Event Styling */
+        #click-card { border-top-color: #007bff; }
+        
+        #click-btn {
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+            outline: none;
+        }
+        
+        #click-btn:hover { 
+            background-color: #0056b3; 
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+        
+        #click-btn:active { 
+            transform: scale(0.92); 
+            box-shadow: 0 2px 10px rgba(0,123,255,0.3);
+        }
+
+        /* 2. Hover Event Styling */
+        #hover-card { border-top-color: #ffc107; }
+        
+        #hover-box {
+            width: 140px;
+            height: 140px;
+            background-color: #ffc107;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive DOM Events</h1>
+
+    <div class="container">
+        <!-- Click Event -->
+        <div class="card" id="click-card">
+            <h3>The Click</h3>
+            <button id="click-btn">Click Me!</button>
+            <p class="status-text" id="click-status">Waiting for click...</p>
+        </div>
+
+        <!-- Hover Event -->
+        <div class="card" id="hover-card">
+            <h3>The Hover</h3>
+            <div id="hover-box">Hover!</div>
+            <p class="status-text" id="hover-status">Waiting for mouse...</p>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. CLICK EVENT LOGIC ---
+        const clickBtn = document.getElementById('click-btn');
+        const clickStatus = document.getElementById('click-status');
+        let clickCount = 0;
+
+        clickBtn.addEventListener('click', () => {
+            clickCount++;
+            clickStatus.textContent = `Clicked ${clickCount} time${clickCount > 1 ? 's' : ''}!`;
+            
+            // Toggle colors on click
+            if (clickCount % 2 !== 0) {
+                clickBtn.style.backgroundColor = '#dc3545'; // Red
+                clickBtn.style.boxShadow = '0 4px 15px rgba(220,53,69,0.4)';
+            } else {
+                clickBtn.style.backgroundColor = '#007bff'; // Blue
+                clickBtn.style.boxShadow = '0 4px 15px rgba(0,123,255,0.4)';
+            }
+        });
+
+        // --- 2. HOVER EVENT LOGIC ---
+        const hoverBox = document.getElementById('hover-box');
+        const hoverStatus = document.getElementById('hover-status');
+
+        hoverBox.addEventListener('mouseenter', () => {
+            // Fires when the mouse enters the box
+            hoverBox.style.backgroundColor = '#17a2b8'; // Teal
+            hoverBox.style.transform = 'scale(1.15) rotate(8deg)';
+            hoverBox.style.boxShadow = '0 8px 25px rgba(23, 162, 184, 0.4)';
+            hoverBox.style.color = 'white';
+            hoverBox.textContent = 'Awesome!';
+            
+            hoverStatus.textContent = 'Mouse is inside!';
+            hoverStatus.style.color = '#17a2b8';
+        });
+
+        hoverBox.addEventListener('mouseleave', () => {
+            // Fires when the mouse leaves the box
+            hoverBox.style.backgroundColor = '#ffc107'; // Yellow
+            hoverBox.style.transform = 'scale(1) rotate(0deg)';
+            hoverBox.style.boxShadow = '0 4px 15px rgba(255, 193, 7, 0.3)';
+            hoverBox.style.color = '#333';
+            hoverBox.textContent = 'Hover!';
+            
+            hoverStatus.textContent = 'Mouse left.';
+            hoverStatus.style.color = '#666';
+        });
+    </script>
+</body>
+</html>
