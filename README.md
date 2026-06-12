@@ -348,6 +348,52 @@ A comprehensive Bootstrap 5 reference website showcasing the most important Boot
 
 ---
 
+### 🎨 17. Font Awesome Icon Gallery
+
+A responsive dashboard-style icon gallery built using HTML, CSS, Font Awesome, and JavaScript. This project displays icons in multiple categories with a clean sidebar navigation and responsive grid layout.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/font-awesome-gallery.html)
+
+🖼️ **Preview:** <br> <img width="1000" src="YOUR_SCREENSHOT_URL_HERE" />
+
+✨ **Features:**
+
+* Font Awesome Icon Library Integration 🎨
+* Sticky Header 📌
+* Sidebar Category Navigation 🧭
+* Responsive Icon Grid 🔲
+* Icon Hover Effects ✨
+* Active Menu Highlight on Scroll ⚡
+* Mobile-Friendly Layout 📱
+* Clean Dashboard UI 💻
+
+### 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Font Awesome 6
+
+### 📂 Icon Categories
+
+1. Development & Tech
+2. Gaming Zone
+3. Media & Design UI
+4. Social & Communication
+
+### 💡 Learning Outcomes
+
+* Learned how to integrate Font Awesome icons
+* Practiced responsive grid layouts
+* Created sidebar-based navigation
+* Used JavaScript scroll event handling
+* Improved UI design and dashboard layout skills
+
+💡 This project demonstrates **Font Awesome Icons + Responsive Grid Design + JavaScript Scroll Interaction**.
+
+---
+
+
 ## 📈 Skills Gained
 
 * Responsive Web Design
