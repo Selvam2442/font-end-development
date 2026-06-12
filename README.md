@@ -223,7 +223,7 @@ A fully responsive image slider website featuring automatic slide transitions, n
 
 A task management application that helps users organize daily activities efficiently with an easy-to-use interface.
 
-🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/todolist.html)
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/todo.html)
 
 ✨ **Features:**
 
@@ -242,7 +242,7 @@ A task management application that helps users organize daily activities efficie
 
 An interactive project designed to demonstrate JavaScript event handling concepts through real-time user interactions and dynamic UI changes.
 
-🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/event-playground.html)
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/event.html)
 
 ✨ **Features:**
 
