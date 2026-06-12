@@ -257,6 +257,43 @@ An interactive project designed to demonstrate JavaScript event handling concept
 
 ---
 
+### 🌐 15. Responsive Modern Webpage
+
+A modern and fully responsive landing page built using HTML and CSS. The project demonstrates the effective use of Flexbox, CSS Grid, media queries, and reusable UI components to create a clean and professional web interface.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/res.html)
+
+🖼️ **Preview:** <br>
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/125501d0-1928-4e7a-857e-13cd4860f2bb" />
+
+
+✨ **Features:**
+* Sticky Navigation Bar 📌
+* Modern Hero Section 🚀
+* CSS Grid Layout System 🔲
+* Responsive Service Cards 📋
+* Mobile-Friendly Design 📱
+* Flexbox Navigation Menu 🔄
+* Modern Button Hover Effects ✨
+* Professional Landing Page UI 🎨
+
+### 🔧 Technologies Used
+* HTML5
+* CSS3
+* Flexbox
+* CSS Grid
+* Media Queries
+* Font Awesome Icons
+
+### 📱 Responsive Features
+* Desktop Layout Support 💻
+* Tablet Optimization 📟
+* Mobile-Friendly Interface 📱
+* Adaptive Grid System 🔄
+
+💡 This project demonstrates **Responsive Web Design + CSS Grid + Flexbox + Modern UI Development**.
+
+---
 
 ## 📈 Skills Gained
 
