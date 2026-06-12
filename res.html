@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Modern Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==========================================
+           1. CORE RESET & BASE STYLES
+           ========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f9fbfd;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* Container for structured layout alignment */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==========================================
+           2. NAVIGATION BAR (Flexbox)
+           ========================================== */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1a202c;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #3b82f6;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #3b82f6;
+        }
+
+        /* ==========================================
+           3. HERO SECTION (CSS Grid Layout)
+           ========================================== */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.2rem;
+            line-height: 1.15;
+            color: #0f172a;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            color: #475569;
+            margin-bottom: 30px;
+            max-width: 90%;
+        }
+
+        /* Common Button Component */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #3b82f6;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        /* ==========================================
+           4. SERVICES SECTION (Auto-Fitting Grid)
+           ========================================== */
+        .services {
+            padding: 90px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            margin-bottom: 50px;
+            font-size: 1.05rem;
+        }
+
+        /* Auto-fit scales cards intelligently across screen layouts */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .card i {
+            font-size: 36px;
+            color: #3b82f6;
+            margin-bottom: 20px;
+            background: #eff6ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* ==========================================
+           5. FOOTER
+           ========================================== */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 15px;
+            border-top: 1px solid #1e293b;
+        }
+
+        /* ==========================================
+           6. RESPONSIVE BREAKPOINTS (Media Queries)
+           ========================================== */
+        
+        /* Tablet & Mobile Layout Shifts */
+        @media (max-width: 992px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 0;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .hero {
+                padding: 50px 0;
+                text-align: center;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr; /* Stack columns vertically */
+                gap: 30px;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Web<span>Craft</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Build Smarter Responsive Designs</h1>
+                <p>Create clean, fast, and highly maintainable components using standard CSS layout strategies like CSS Grid and Flexbox layouts.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard Representation Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Engineered for Efficiency</h2>
+            <p class="section-subtitle">A simple, performance-first approach to structured component design.</p>
+            
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Modular Layouts</h3>
+                    <p>Clean alignment rules utilizing Flexbox strategies to seamlessly control internal visual spaces.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Fluid Adapters</h3>
+                    <p>Media queries target element widths dynamically to eliminate explicit viewport scaling bugs.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Optimized Engine</h3>
+                    <p>Zero external tracking scripts or render-blocking visual dependencies to ensure fast execution scores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WebCraft. Built with performance structures.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
