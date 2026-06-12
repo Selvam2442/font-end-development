@@ -352,9 +352,10 @@ A comprehensive Bootstrap 5 reference website showcasing the most important Boot
 
 A responsive dashboard-style icon gallery built using HTML, CSS, Font Awesome, and JavaScript. This project displays icons in multiple categories with a clean sidebar navigation and responsive grid layout.
 
-🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/font-awesome-gallery.html)
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/icon.html)
 
-🖼️ **Preview:** <br> <img width="1000" src="YOUR_SCREENSHOT_URL_HERE" />
+🖼️ **Preview:** <br> <img width="1920" height="1972" alt="screencapture-127-0-0-1-5501-icon-html-2026-06-12-10_33_45" src="https://github.com/user-attachments/assets/d6328b94-397d-42bb-9175-9dba86fd0c65" />
+
 
 ✨ **Features:**
 
