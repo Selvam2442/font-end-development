@@ -182,6 +182,82 @@ A clean, modern static website designed to perfectly demonstrate core JavaScript
 
 ---
 
+### ⏰ 11. Digital Clock
+
+A modern real-time digital clock built using HTML, CSS, and JavaScript that displays the current time and date with automatic updates every second.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/clock.html)
+
+✨ **Features:**
+
+* Real-time clock updates every second ⏱️
+* Current date display 📅
+* Modern glassmorphism design 🎨
+* Responsive layout for all devices 📱💻
+* Clean and lightweight code ⚡
+
+💡 This project demonstrates **JavaScript Date Object + DOM Manipulation + Real-Time Updates**.
+
+---
+
+### 🎞️ 12. Responsive Image Slider
+
+A fully responsive image slider website featuring automatic slide transitions, navigation controls, indicators, and engaging visual content.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/slider.html)
+
+✨ **Features:**
+
+* Automatic slideshow functionality 🔄
+* Previous & Next navigation buttons ⬅️➡️
+* Interactive dot indicators ⚪
+* Smooth CSS transitions ✨
+* Responsive design across all devices 📱💻
+* Modern UI with content overlays 🎨
+
+💡 This project highlights **JavaScript Logic + Responsive Design + User Interaction**.
+
+---
+
+### ✅ 13. To-Do List Application
+
+A task management application that helps users organize daily activities efficiently with an easy-to-use interface.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/todolist.html)
+
+✨ **Features:**
+
+* Add new tasks ➕
+* Mark tasks as completed ✔️
+* Delete tasks 🗑️
+* Dynamic DOM updates ⚡
+* Responsive user interface 📱
+* Simple and clean design 🎨
+
+💡 This project demonstrates **CRUD Operations + DOM Manipulation + JavaScript Event Handling**.
+
+---
+
+### 🖱️ 14. Advanced Event Handling Playground
+
+An interactive project designed to demonstrate JavaScript event handling concepts through real-time user interactions and dynamic UI changes.
+
+🔗 **Live Demo:** [View Project](https://selvam2442.github.io/font-end-development/event-playground.html)
+
+✨ **Features:**
+
+* Click events 🖱️
+* Double-click events 👆
+* Mouse hover effects ✨
+* Keyboard events ⌨️
+* Dynamic content updates 🔄
+* Real-time user interaction feedback ⚡
+
+💡 This project showcases **JavaScript Event Listeners + DOM Manipulation + Interactive Web Design**.
+
+---
+
+
 ## 📈 Skills Gained
 
 * Responsive Web Design
